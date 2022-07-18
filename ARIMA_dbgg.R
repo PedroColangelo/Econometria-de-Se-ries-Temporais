@@ -90,7 +90,8 @@ summary(arima_dbgg)
 checkresiduals(arima_dbgg)
 
 ### Os resíduos do nosso modelo ARIMA mantêm as propriedades desejadas
-### por nós. Vamos prevendo os 12 meses seguintes:
+### por nós. Vamos prever os 4 trimestres seguintes, assim como
+### comparar o modelo fitted aos dados reais que possuímos do período:
 
 forecast_dbgg <- forecast(arima_dbgg, h = 4)
 
