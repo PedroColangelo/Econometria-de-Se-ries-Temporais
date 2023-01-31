@@ -179,3 +179,5 @@ p <- ggplot(data = desemprego_data, aes(x = Dates,
 #Animação do gráfico
 
 p <- p + transition_reveal(as.Date(desemprego_data$Dates))
+
+p
